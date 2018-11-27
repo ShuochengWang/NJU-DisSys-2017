@@ -1,0 +1,2 @@
+*.exe
+pkg/windows_amd64/labrpc.a
