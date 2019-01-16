@@ -927,3 +927,24 @@ func TestReliableChurn(t *testing.T) {
 func TestUnreliableChurn(t *testing.T) {
 	internalChurn(t, true)
 }
+
+
+func TestAll(t *testing.T) {
+	TestInitialElection(t)
+	TestReElection(t)
+	TestBasicAgree(t)
+	TestFailAgree(t)
+	TestFailNoAgree(t)
+	TestConcurrentStarts(t)
+	TestRejoin(t)
+	TestBackup(t)
+	TestCount(t)
+	TestPersist1(t)
+	TestPersist2(t)
+	TestPersist3(t)
+	// TestFigure8(t)
+	// TestUnreliableAgree(t)
+	// TestFigure8Unreliable(t)
+	// TestReliableChurn(t)
+	// TestUnreliableChurn(t)
+}
